@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<college>
+    <department name="Computer Science and Engineering">
+        <hod>
+            <name>Ms.Radhika Dhanal</name>
+            <email>dypcet@college.edu</email>
+        </hod>
+        
+        <faculty>
+            <professor>
+                <name>Prof. Tushar Salokhe</name>
+                <email>tusharsalokhe@gmail.com</email>
+                <subject>Project</subject>
+            </professor>
+            <professor>
+                <name>Prof.Niraj Haval</name>
+                <email>nirajhaval@gmail.com</email>
+                <subject>Information Security</subject>
+            </professor>
+            <professor>
+                <name>Mrs.Ranjita Jadhav</name>
+                <email>ranjitajadhav@gmail.com</email>
+                <subject>Web Technology</subject>
+            </professor>
+            <professor>
+                <name>Prof.Santosh Kore</name>
+                <email>santoshkore@gmail.com</email>
+                <subject>AIML</subject>
+            </professor>
+        </faculty>
+
+        <courses>
+            <course>
+                <code>CSE101</code>
+                <title>Information Security</title>
+                <credits>4</credits>
+            </course>
+            <course>
+                <code>CSE202</code>
+                <title>AIML</title>
+                <credits>3</credits>
+            </course>
+            <course>
+                <code>CSE203</code>
+                <title>WTL</title>
+                <credits>3</credits>
+            </course>
+            <course>
+                <code>CSE204</code>
+                <title>Project</title>
+                <credits>3</credits>
+            </course>
+        </courses>
+
+        <students>
+            <student id="CSE2023001">
+                <name>Amar Naik</name>
+                <email>naikamar1029@college.edu</email>
+                <year>3</year>
+            </student>
+            <student id="CSE2023002">
+                <name>Prem Naik</name>
+                <email>prem@college.edu</email>
+                <year>2</year>
+            </student>
+        </students>
+    </department>
+</college>

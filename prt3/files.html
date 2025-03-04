@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Files</title>
+    <script>
+        function openFolder(folderId) {
+            let folder = document.getElementById(folderId);
+            folder.style.display = folder.style.display === "none" ? "block" : "none";
+        }
+
+        function openFile(filePath) {
+            parent.rightFrame.location.href = filePath; 
+        }
+    </script>
+
+    <style>
+        body{
+            background-color: rgb(49, 48, 48);
+            
+        }
+        li{
+            color: aliceblue;
+        }
+        a{
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <li><strong>Directories</strong></li>
+    <ul>
+        <li>
+            <a href="#" onclick="openFolder('learningFiles')">📁 learning</a>
+            <ul id="learningFiles" style="display:none;">
+                <li><a href="#" onclick="openFile('../learning/demo.html')">demo.html</a></li>
+                <li><a href="#" onclick="openFile('../learning/demo1.html')">demo1.html</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#" onclick="openFolder('prt1Files')">📁 prt1</a>
+            <ul id="prt1Files" style="display:none;">
+                <li><a href="#" onclick="openFile('../prt1/reg-form.html')">reg-form.html</a></li>
+                <li><a href="#" onclick="openFile('../prt1/resume.html')">resume.html</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#" onclick="openFolder('prt2Files')">📁 prt2</a>
+            <ul id="prt2Files" style="display:none;">
+                <li><a href="#" onclick="openFile('../prt2/resume1.html')">resume1.html</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#" onclick="openFolder('prt3Files')">📁 prt3</a>
+            <ul id="prt3Files" style="display:none;">
+                <li><a href="#" onclick="openFile('index.html')">index.html</a></li>
+                <li><a href="#" onclick="openFile('viewer.html')">viewer.html</a></li>
+                <li><a href="#" onclick="openFile('files.html')">files.html</a></li>
+                <li><a href="#" onclick="openFile('top.html')">top.html</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#" onclick="openFolder('xmlFiles')">📁 xml</a>
+            <ul id="xmlFiles" style="display:none;">
+                <li><a href="#" onclick="openFile('../xml/demo.xml')">demo.xml</a></li>
+                <li><a href="#" onclick="openFile('../xml/cse.xml')">cse.xml</a></li>
+            </ul>
+        </li>
+        
+    </ul>
+</body>
+</html>

@@ -1,0 +1,30 @@
+books {
+    color: white;
+    background-color: gray;
+    padding: 10px;
+    display: block;
+}
+
+book {
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+title, author, year {
+    display: block;
+}
+
+title {
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgb(247, 140, 140);
+    padding: 5px;
+}
+
+author::before, year::before {
+    content: "• ";
+    color: white;   
+    font-weight: bold;
+}

@@ -1,0 +1,8 @@
+study and impl of xml
+intro to xml
+Adv of xml
+syntax of xml
+difference between well formed xml docu and valid xml docu
+html v/s xml
+what is dtd and specify rules for dtd
+xml schema
