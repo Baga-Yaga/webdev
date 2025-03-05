@@ -1,0 +1,7 @@
+<!ELEMENT students (student+)>
+<!ELEMENT student (ID,Name,Roll,department,CGPA)>
+<!ELEMENT ID (#PCDATA)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Roll (#PCDATA)>
+<!ELEMENT department (#PCDATA)>
+<!ELEMENT CGPA (#PCDATA)>

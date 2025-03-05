@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE students SYSTEM "stud.dtd">
+<?xml-stylesheet type="text/xsl" href="stud.xsl"?>
+
+<students>
+    <student>
+        <ID>1</ID>
+        <Name>Amar Naik</Name>
+        <Roll >73</Roll>
+        <department>CSE</department>
+        <CGPA>7.8</CGPA>
+    </student>
+
+    <student>
+        <ID>2</ID>
+        <Name>Atharva Sultanpure</Name>
+        <Roll >66</Roll>
+        <department>CSE</department>
+        <CGPA>7.6</CGPA>
+    </student>
+
+    <student>
+        <ID>3</ID>
+        <Name>Om Raut</Name>
+        <Roll >77</Roll>
+        <department>CSE</department>
+        <CGPA>8.2</CGPA>
+    </student>
+</students>
