@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <books>
+        <book id="1">
+            <title>Introduction to Cybersecurity</title>
+            <author>John Doe</author>
+            <genre>Technology</genre>
+            <published_year>2021</published_year>
+            <available>true</available>
+        </book>
+        <book id="2">
+            <title>Web Hacking 101</title>
+            <author>Jane Smith</author>
+            <genre>Security</genre>
+            <published_year>2019</published_year>
+            <available>false</available>
+        </book>
+    </books>
+
+    <borrowers>
+        <borrower id="101">
+            <name>Amar Naik</name>
+            <email>amar@gmail.com</email>
+            <borrowed_books>
+                <book_id>2</book_id>
+            </borrowed_books>
+        </borrower>
+        <borrower id="102">
+            <name>Atharv Sultanpure</name>
+            <email>atharv@gmail.com</email>
+            <borrowed_books />
+        </borrower>
+    </borrowers>
+</library>
+

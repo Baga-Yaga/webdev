@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company>
+    <employees>
+        <employee id="E101">
+            <name>John Doe</name>
+            <position>Software Engineer</position>
+            <department>IT</department>
+            <email>johndoe@example.com</email>
+            <salary currency="INR">75000</salary>
+            <hire_date>2020-06-15</hire_date>
+        </employee>
+        <employee id="E102">
+            <name>Jane Smith</name>
+            <position>Security Analyst</position>
+            <department>Cybersecurity</department>
+            <email>janesmith@example.com</email>
+            <salary currency="INR">85000</salary>
+            <hire_date>2018-09-25</hire_date>
+        </employee>
+        <employee id="E103">
+            <name>Alice Johnson</name>
+            <position>HR Manager</position>
+            <department>Human Resources</department>
+            <email>alicejohnson@example.com</email>
+            <salary currency="INR">65000</salary>
+            <hire_date>2016-03-10</hire_date>
+        </employee>
+    </employees>
+</company>

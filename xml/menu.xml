@@ -3,9 +3,9 @@
 
 <breakfast_menu>
     <food>
-        <name>Belgian Waffles</name>
+        <name>Banana Chips</name>
         <price>$5.95</price>
-        <description>Two of our famous Belgian Waffles with plenty of real maple syrup</description>
+        <description>Delicious banana chips ! buy 1 get 1 free !</description>
         <calories>650</calories>
     </food>
     <food>
