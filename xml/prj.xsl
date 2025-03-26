@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-<xsl:template match="/">
-
+    <xsl:template match="/">
+    
 <html>
 <head>
     <title>Student Data</title>
@@ -31,26 +31,29 @@
             background-color: #4CAF50;
             color: white;
         }
+
+        h1 ,h2{
+            text-align:center;
+            color:green;
+            
+        }
     </style>
 </head>
     <body style="font-family:Arial; font-size:12pt; background-color:#EEEEEE">
+        <h1>Project Team - Unknown</h1>
+        <h2>Web Scanner</h2>
         <table border="1">
             <tr>
-                <th>Id</th>
+                
                 <th>Name</th>
-                <th>Roll NO.</th>
-                <th>Department</th>
-                <th>CGPA</th>
+                <th>Role</th>
 
             </tr>
             
-            <xsl:for-each select="students/student">
+            <xsl:for-each select="project/member">
                 <tr>
-                    <td><xsl:value-of select="ID"></xsl:value-of></td>
                     <td><xsl:value-of select="Name"></xsl:value-of></td>
-                    <td><xsl:value-of select="Roll"></xsl:value-of></td>
-                    <td><xsl:value-of select="department"></xsl:value-of></td>
-                    <td><xsl:value-of select="CGPA"></xsl:value-of></td>
+                    <td><xsl:value-of select="Role"></xsl:value-of></td>
                 </tr>
             </xsl:for-each>
 
@@ -64,3 +67,5 @@
 
 </xsl:template>
 </xsl:stylesheet>
+    
+    
