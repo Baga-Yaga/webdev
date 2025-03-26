@@ -15,7 +15,6 @@
             
         }
         table {
-            
             width: 80%;
             border-collapse: collapse;
             margin: 20px auto;
@@ -58,7 +57,6 @@
         </table>
     
     </body>
-
 
 </html>
 
