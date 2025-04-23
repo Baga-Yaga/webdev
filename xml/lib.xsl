@@ -41,6 +41,26 @@
                 
                 <h2>Last Book in List</h2>
                 <p><xsl:value-of select="//book[last()]/title" /></p>
+
+                <h1>Borrowers</h1>
+                <ul>
+                <xsl:for-each select="//borrower">
+                    <li>
+                    <b>Borrower ID:</b> <xsl:value-of select="@id" /><br />
+                    <b>Name:</b> <xsl:value-of select="name" /><br />
+                    <b>Email:</b> <xsl:value-of select="email" /><br />
+                    <b>Borrowed Books:</b>
+                    <ul>
+                        <xsl:for-each select="borrowed_books/book_id">
+                        <li>
+                            <xsl:value-of select="//book[@id=current()]/title" />
+                        </li>
+                        </xsl:for-each>
+                    </ul>
+                    </li>
+                </xsl:for-each>
+                </ul>
+
             </body>
         </html>
     </xsl:template>
