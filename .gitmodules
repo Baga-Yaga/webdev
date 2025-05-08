@@ -1,0 +1,3 @@
+[submodule "prt16/WebScanner"]
+	path = prt16/WebScanner
+	url = https://github.com/omraut1221/WebScanner
