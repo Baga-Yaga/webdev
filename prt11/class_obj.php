@@ -1,6 +1,5 @@
 <?php
 
-// 1. Class & Properties (Encapsulation)
 class Vehicle {
     protected $brand;
     protected $speed;
@@ -15,34 +14,29 @@ class Vehicle {
     }
 
     public function getDetails() {
-        return "Brand: {$this->brand}, Speed: {$this->speed} km/h";
+        return "Brand: $this->brand, Speed: $this->speed km/h";
     }
 }
 
-// 2. Inheritance
 class Car extends Vehicle {
     private $fuel;
 
     public function __construct($brand, $speed, $fuel) {
-        parent::__construct($brand, $speed);
-        $this->fuel = $fuel;
+        parent::__construct($brand, $speed); 
+        $this->fuel = $fuel; 
     }
 
-    // 3. Polymorphism (overriding)
     public function getDetails() {
-        return parent::getDetails() . ", Fuel: {$this->fuel}%";
+        return parent::getDetails() . ", Fuel: $this->fuel%";
     }
 }
 
-// 4. Object Instantiation
-$vehicle = new Vehicle("Generic", 40);
-$car = new Car("Toyota", 60, 80);
+$vehicle = new Vehicle("Bike", 30);
+$car = new Car("Honda", 50, 70);
 
-// 5. Using Methods
-$vehicle->accelerate(20);
-$car->accelerate(30);
+$vehicle->accelerate(10); 
+$car->accelerate(20);     
 
-// 6. Output
 echo $vehicle->getDetails() . "<br>";
 echo $car->getDetails();
 

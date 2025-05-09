@@ -1,7 +1,7 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['username'];
-    $email = $_POST['email'];
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+    $name = $_GET['username'];
+    $email = $_GET['email'];
 
     echo "<h3>Received Data:</h3>";
     echo "Name: " . htmlspecialchars($name) . "<br>";
