@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple File Upload</title>
+    <style>
+        body {
+            background-color: #e0e0e0;
+            font-family: Verdana, sans-serif;
+            padding: 40px;
+        }
+
+        .box {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        input[type="file"] {
+            display: block;
+            margin: 15px auto;
+        }
+
+        input[type="submit"] {
+            display: block;
+            margin: 20px auto 0;
+            padding: 8px 16px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        .note {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Select a File to Upload</h2>
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
+        <input type="file" name="uploadedFile" required>
+        <input type="submit" value="Upload">
+    </form>
+    <div class="note">Supported: .jpg, .pdf, .txt, etc.</div>
+</div>
+
+</body>
+</html>

@@ -88,8 +88,8 @@
         <?php 
             if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $name = $_POST['name'];
-                $age = $_POST['age']; 
-
+                $age = $_POST['age'];
+                
                 echo "<div class='result'>";
                 if (is_numeric($age)) {
                     if ($age >= 18) {
